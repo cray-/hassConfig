@@ -1,0 +1,24 @@
+- alias: Single Click to toggle study light
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0002132abf
+      click_type: single
+  action:
+    service: light.toggle
+    data:
+      entity_id: light.study_light
+
+- alias: Double Click to toggle Gateway light
+  trigger:
+    platform: event
+    event_type: click
+    event_data:
+      entity_id: binary_sensor.switch_158d0002132abf
+      click_type: double
+  action:
+    service: light.toggle
+    data:
+      entity_id: light.gateway_light_7811dc6c8e97
+
