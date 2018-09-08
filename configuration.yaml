@@ -72,7 +72,6 @@ camera:
     name: Fang Hacked Cam 3
     input: rtsp://10.1.1.120:554/unicast
 
-
 # Discover some devices automatically
 discovery:
 
